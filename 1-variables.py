@@ -2,15 +2,22 @@
 
 # Do not need explicit declaration
 # Declaration happens when you assign a value
+# Variable Names are Case senstivie
 
 counter = 100
+Counter = 200
 miles = 35.5
 name = 'John'
 
 print(counter)
+print(Counter)
 print(miles)
 print(name)
 print()
+
+# Python has the concept of Mutable and Immutable objects. 
+# An object like a string or integer is immutable - every change you make creates a new string or integer.
+# Lists are mutable and can be manipulated in place
 
 # Multiple assignment
 # An integer object is created with the value 100,
