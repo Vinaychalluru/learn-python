@@ -14,7 +14,7 @@ made up of multiple lines and sentences.'''
 
 # User input
 
-# Semicolon allows multiple statements on a single line sa below comment
+# Semicolon allows multiple statements on a single line as below comment
 # Per standard, it is not recommended
 # import sys ; var="test" ; sys.stdout.write("My var is " + var)
 import sys

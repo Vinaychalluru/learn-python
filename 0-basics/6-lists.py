@@ -14,6 +14,9 @@ alphaList = ['A', 'B', 'C', 'D']
 print(alphaList[2])
 print(alphaList[-2])  # Negative: Count from the end
 print(alphaList[1:])  # Slicing fetched sections
+print(alphaList[:])
+print(alphaList[:-3])
+
 
 # Built In Functions
 myTuple = (1, 2, 3, 4)
@@ -42,3 +45,10 @@ myList2.sort()  # Use when all the elements are either string type / a number ty
 newList = [20, 10, 1.5, 2]
 newList.sort()
 print(newList)
+
+# Nested List
+myList.clear()
+myList = ['Good',[2,0,2,0]]
+print(myList[0])
+print(myList[0][3])
+print(myList[1][3])

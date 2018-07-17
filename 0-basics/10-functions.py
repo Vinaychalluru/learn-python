@@ -1,4 +1,4 @@
-# Observed that autopep leaves two lines blank space before and after the function definition
+# autopep8 leaves two lines blank space before and after the function definition
 
 
 def funcName(param1, param2):  # Function Definition
@@ -24,7 +24,7 @@ myList = [1, 2, 3, 4]
 
 paramTest(myList)
 # Params are passed by reference - So all the changes made to myList inside the function paramTest
-# are reflecting outside of the functionc call
+# are reflecting outside of the function call
 print(myList)
 
 # Types of Arguments
@@ -78,15 +78,15 @@ def fn_scope_test_internal_var(myVar):
 
 def fn_var_scope_test_var(myVar):
     myVar = 1234
-    print('mVar in the local scope is : ', myVar)
+    print('myVar in the local scope is : ', myVar)
     fn_scope_test_internal_var(myVar)
-    print('myyList after test_internal is : ', myVar)
+    print('myVar after test_internal is : ', myVar)
 
 
 print()
-print('mVar before calls - Global : ', myVar)
+print('myVar before calls - Global : ', myVar)
 fn_var_scope_test_var(myVar)
-print('mVar after calls - Global : ', myVar)
+print('myVar after calls - Global : ', myVar)
 
 # Scope of the List Variable 
 # Python has the concept of Mutable and Immutable objects. 
@@ -118,3 +118,8 @@ print('myList after calls - Global : ', myList)
 # Anonymous Functions
 # Declaration uses 'lambda' instead of 'def'
 # lambda has been dropped from Python. Also, map, filter and reduce
+
+# squares = list(map(lambda x: x**2, range(10)))
+
+# List Comprehension
+# squares = [x**2 for x in range(10)]

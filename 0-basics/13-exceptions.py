@@ -4,6 +4,7 @@
 # Python evaluates the accompanying expression, which is hopefully true.
 # If the expression is false, Python raises an AssertionError exception
 
+import traceback
 
 def isAdult(age):
     assert(age > 18), 'You should be above 18 to be allowed'
@@ -28,9 +29,10 @@ def assert_example_with_try():
         print('You are %s' % isAdult(20))
     except Exception as e:
         print('Encountered an Exception - ' + repr(e))
+        traceback.print_exc()
     finally:
-        print('You need to see the Assert Traceback for more details')
-
+        print('Traceback of the Exception is printed above')
+        
 # Standard Exceptions
 # try - except - else
 # try - except - finally
@@ -67,6 +69,9 @@ def exception_depth_example():
 
 
 exception_example()
+print('')
 exception_depth_example()
+print('')
 assert_example_with_try()
+print('')
 assert_example()
