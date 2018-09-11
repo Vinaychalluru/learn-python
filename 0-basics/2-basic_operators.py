@@ -7,12 +7,11 @@ print(str(n1) + ' to the power of ' + str(n2) + ' is ' + str(n3))
 print(n1, ' to the power of ', n2, ' is ', n3)
 print('%d to the power of %d is %d' % (n1, n2, n3))
 
-# Floor Division - Digits after the decimal in the quotient are removed
-n4 = n1/n2
-n5 = n1//n2
-print('Division gives ', n4)
 
-print('Floor division gives ', n5)
+n4 = n1/n2 # Float Division
+n5 = n1//n2 # Integer Division (or) Floor Division - Digits after the decimal in the quotient are removed
+print('Division gives ', n4)
+print('Integer division (or) Floor division gives ', n5)
 
 if(n1 != n2):
     print('Not Equal')

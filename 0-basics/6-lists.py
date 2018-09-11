@@ -52,3 +52,9 @@ myList = ['Good',[2,0,2,0]]
 print(myList[0])
 print(myList[0][3])
 print(myList[1][3])
+
+# eval
+# Evaluate the given "source" argument which could be a string representing a Python expression
+myList = [0,1,2,3,4,5]
+eval("myList."+"reverse()")
+print(myList)

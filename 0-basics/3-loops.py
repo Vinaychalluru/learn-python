@@ -36,9 +36,31 @@ for l in 'Alpha':
 for num in wholeNum:
     print('Num :', num)
 
+print(*wholeNum,sep='\n')
+
 # Iterating by sequence of the index
 for i in range(len(wholeNum)):
     print(wholeNum[i])
+
+# Using step value for range()
+for i in range(len(wholeNum) -1 ,0,-1):
+    print(wholeNum[i])
+
+# Using parameter 'end' and 'sep' for print()
+for i in range(1,11):
+    print(i,end="~")
+else:
+    print()
+
+# The print function uses sep to separate the arguments, and end after the last argument
+# * is used to pass all the values of range as arguments to print
+print(*range(1,11),sep='',end='\n')
+
+# Using _ in the loops
+# Underscore _ is considered as "I don't Care" or "Throwaway" variable in Python
+# It just indicates that the loop variable isn't actually used
+for _ in range(0,5):
+    print()
 
 lower = 10
 upper = 20

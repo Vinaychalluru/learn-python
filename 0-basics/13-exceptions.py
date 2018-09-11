@@ -6,6 +6,7 @@
 
 import traceback
 
+
 def isAdult(age):
     assert(age > 18), 'You should be above 18 to be allowed'
     return 'Allowed'
@@ -32,7 +33,7 @@ def assert_example_with_try():
         traceback.print_exc()
     finally:
         print('Traceback of the Exception is printed above')
-        
+
 # Standard Exceptions
 # try - except - else
 # try - except - finally
@@ -68,9 +69,23 @@ def exception_depth_example():
         myFile.close()
 
 
+# The sole argument to raise indicates the exception to be raised.
+# This must be either an exception instance or an exception class (a class that derives from Exception).
+# If an exception class is passed, it will be implicitly instantiated by calling its constructor with no arguments
+def exception_raise():
+    print('Begin - exception_raise')
+    try:
+        raise RuntimeError('Something went wrong during Runtime')
+    except Exception as e:
+        print('Encountered an exception - ' + repr(e))
+        traceback.print_exc()
+
+
 exception_example()
 print('')
 exception_depth_example()
+print('')
+exception_raise()
 print('')
 assert_example_with_try()
 print('')

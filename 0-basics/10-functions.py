@@ -112,7 +112,16 @@ print('myList before calls - Global : ', myList)
 fn_var_scope_test(myList)
 print('myList after calls - Global : ', myList)
 
+# * means taking everything 0 or more
+def fun(*args):
+    total = 0
+    for i in args:
+        total += i
+    return total
 
+print(fun())
+print(fun(1))
+print(fun(1, 2, 3))
 
 # Notes :
 # Anonymous Functions

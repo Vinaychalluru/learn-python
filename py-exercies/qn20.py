@@ -22,14 +22,16 @@ class numGen:
 ngObj = numGen()
 print(ngObj.iterate(70))
 
+
 def putNumbers(n):
     'generator - yield'
     i = 0
-    while i<n:
-        j=i
-        i=i+1
-        if j%7==0:
+    while i < n:
+        j = i
+        i = i+1
+        if j % 7 == 0:
             yield j
+
 
 div_7_generator = putNumbers(70)
 

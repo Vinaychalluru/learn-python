@@ -15,7 +15,7 @@ print(miles)
 print(name)
 print()
 
-# Python has the concept of Mutable and Immutable objects. 
+# Python has the concept of Mutable and Immutable objects.
 # An object like a string or integer is immutable - every change you make creates a new string or integer.
 # Lists are mutable and can be manipulated in place
 
@@ -87,5 +87,28 @@ print(tinyDict.values())
 
 # Data Type Conversion
 print(int('10'))
-print(chr(8))
+print(chr(65))  # A is printed in the output
 print(str(10))
+
+# The Underscore
+# Underscore _ is considered as "I don't Care" or "Throwaway" variable in Python
+# The python interpreter stores the last expression value to the special variable called _.
+
+# Try the below in an Interpreter mode
+# print(10)
+# _
+# _ ** 3
+
+# The underscore _ is also used for ignoring the specific values.
+# If you don’t need the specific values or the values are not used, just assign the values to underscore
+(x, _, y) = (1, 2, 3)
+print(x, y)
+
+# 1. For storing the value of last expression in interpreter.
+# 2. For ignoring the specific values. (so-called “I don’t care”)
+# 3. To give special meanings and functions to name of vartiables or functions.
+# 4. To use as ‘Internationalization(i18n)’ or ‘Localization(l10n)’ functions.
+# 5. To separate the digits of number literal value.
+
+# The Star
+print(*range(1,10))

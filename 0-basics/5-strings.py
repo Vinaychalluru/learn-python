@@ -42,6 +42,7 @@ print(u'Unicode string uses 16-bit Unicode to store the strings')
 myStr = 'STring meTHods'
 mySubStr = 'ring'
 print(myStr.capitalize())
+print(myStr.swapcase())
 print(myStr.center(50,'-'))
 print(mySubStr in myStr)
 print(myStr.count(mySubStr)) # Retuns no of times
