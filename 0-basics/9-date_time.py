@@ -2,6 +2,7 @@
 import time
 import calendar
 import datetime  # Checkout datetime module
+from datetime import datetime
 
 # A Tick
 # Time intervals are floating-point numbers in unit of seconds
@@ -44,4 +45,13 @@ print(myCurCal)
 print(calendar.isleap(2000))
 print(calendar.leapdays(2000, 2010))
 
-# Explore other Built In functions in time and calendat modules
+# Explore other Built In functions in time and calendar modules
+print(dir(datetime))
+
+now = datetime.now()
+then = datetime(2010,7,31)
+delta = now - then
+
+print(type(delta))
+print("No of days passed since %s are %d" % (then.strftime("%x"), delta.days))
+print("Time now is : ", now.strftime("%Y-%m-%d-%H-%M-%S-%f"))

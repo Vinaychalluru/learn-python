@@ -10,14 +10,26 @@ print(myList2 * 2)
 print('A' in myList)
 
 # Accessing the elements
-alphaList = ['A', 'B', 'C', 'D']
+alphaList = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 print(alphaList[2])
-print(alphaList[-2])  # Negative: Count from the end
+print(alphaList[-2])  # Negative: Count from the end - Negative Indexing
 print(alphaList[1:])  # Slicing fetched sections
+print(alphaList[1:4]) # Prints list[1], list[2], list[3]
 print(alphaList[:])
 print(alphaList[:-3])
+print(alphaList[-5:-1]) # While using negative index also, list processed from left to right
+print(alphaList[-1:-5])
 
+# Extended Slicing
+# Consider a sequence or list any_sequence[i:j:k]; According to the documentation, "slice of any_sequence from i to j with step k"
+fibo = [0,1,1,2,3,5,8,13,21,34,55,89,144,233]
+print(fibo[0:10:2])
+# Prints every fourth element from the list / sequence fibo
+print(fibo[::4])
 
+# Function Vs Method : The difference between a function and a method is that,
+# A method is applied on/after an Object
+# Whereas A function takes an Object as argument
 # Built In Functions
 myTuple = (1, 2, 3, 4)
 print(myList == myList2)

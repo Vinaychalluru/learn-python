@@ -34,3 +34,12 @@ myDict2 = {'Year': 2000}
 myDict.update(myDict2)
 # Creating a sub dictionary from specific keys
 print(myDict.fromkeys(('ID', 'Name'), 100))
+
+
+# Mapping two lists to a dictionary
+keys_list = [1,2,3,4]
+vals_list = ['a','b','c','d']
+dict_from_lists = dict(zip(keys_list,vals_list))
+
+print(zip(keys_list, vals_list))
+print(dict_from_lists)

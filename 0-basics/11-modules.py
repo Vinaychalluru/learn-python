@@ -3,17 +3,29 @@
 # Module allows your code to be  logically organized
 
 # A python module named 'sample' resieds in a file name 'sample.py'
+# Python Modules and Libraries are installed by default but they're limited
+# Third party modules and libraries are referred to as Packages
+
+# Commonly called as Python Libraries
+# Module - Python Script that you can import
+# Library - Collection of Python Scripts
+# Package - Third party libraries
 
 # You can import a module in another python code file
+# Note: It is not a good practice to load everything into memory when Python loads
 
 import math
+import os
 
 from datetime import timezone  # from <module> import <func / attribute>
+from http import server # Here, html is a Library. It is a folder with group of py files
 
 math_Modules = dir(math)
 print('type(dir(math)) is ', type(math_Modules))
 print()
 print('dir(math) has the following', math_Modules)
+print()
+print('os.__file__ gives you the path where module is installed', os.__file__)
 
 # Packages
 # Package is a hierarchial directory structure that consists of modules, subpackages

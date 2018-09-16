@@ -123,6 +123,11 @@ print(fun())
 print(fun(1))
 print(fun(1, 2, 3))
 
+print(dir(__builtins__))
+print(dir(list))
+print(help(len))
+print(help(list))
+
 # Notes :
 # Anonymous Functions
 # Declaration uses 'lambda' instead of 'def'
