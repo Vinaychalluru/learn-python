@@ -1,4 +1,6 @@
 
+import random
+
 myList = [1, 2.5, 'A', 'B', 'Happy']
 myList2 = ['x', 'y', 'z']
 
@@ -57,6 +59,10 @@ myList2.sort()  # Use when all the elements are either string type / a number ty
 newList = [20, 10, 1.5, 2]
 newList.sort()
 print(newList)
+print("myList before shuffle is ", myList)
+# Randomizes the items of a list in place. Returns None.
+random.shuffle(myList)
+print("myList after Shuffle is", myList)
 
 # Nested List
 myList.clear()
