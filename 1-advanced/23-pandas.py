@@ -1,7 +1,9 @@
 from pandas import DataFrame
 from pandas import read_csv
+from pandas import read_json
+from pandas import read_excel
 
-# If you import pandas as whole, 
+# If you import pandas as whole,
 # all the modules in the package would be imported that load more into memory
 # If import pandas is used, then you can use pandas.DataFrame
 # import pandas
@@ -78,9 +80,90 @@ print(df5)
 df5 = read_csv("../assets/sample.csv")
 print()
 print(df5.set_index("ID"))
+print(df5.shape)
+# A DataFrame is not modified or on using set_index() method. It only process the data for displaying on the fly
+# If you wish to save the data, you need to store it to another DataFrame variable
+df5 = df5.set_index("ID")
+# Or set 'inplace' parameter to True
+# df5.set_index("ID",inplace=True)
+print(df5)
+
+print(" ---- ")
+print(df5.index)
+print(df5.columns)
+print(type(df5.index), " ", type(df5.columns))
+print()
+
+df6 = read_json("../assets/sample.json")
+print()
+print(df6.set_index("ID"))
 
 # Note on importing Excel
 # Pandas may require the xlrd library as a dependency.
-# If you get an error such as ModuleNotFoundError: No module named 'xlrd', 
+# If you get an error such as ModuleNotFoundError: No module named 'xlrd',
 # you can fix that by installing xlrd: pip install xlrd
 
+# Excel may have multiple sheets. sheet_name=0 identifies the first sheet in the Excel
+df7 = read_excel("../assets/sample.xlsx", sheet_name=0)
+print()
+print(df7.set_index("ID"))
+
+df8 = read_csv("../assets/sample-semi-colons.txt", sep=";")
+print()
+print(df8.set_index("ID"))
+
+df9 = read_csv("http://pythonhow.com/supermarkets.csv")
+print()
+print(df9.set_index("ID"))
+
+df10 = read_csv("../assets/sample.csv")
+print()
+print("  ----  Indexing and Slicing DataFrame  ----  ")
+# We can do Positional Based / Label Based Indexing
+# Observe the difference in slicing between loc() and iloc()
+
+df10 = df10.set_index("ID")
+# Label Based - df.loc()
+print(df10.loc[4:6, "City":"Name"])
+print(df10.loc[:,"City"])
+print(df10["City"])
+
+# Positional Based - df.iloc()
+print(df10.iloc[4:6, 2:6])
+
+print()
+print("  ----  Deleting Columns and Rows of a DataFrame  ----  ")
+# Param 1 specifies Column 'City' needs to be deleted. 0 for a row
+print(df10.drop("City", 1))
+# Similar to df.set_index(), df.drop() also works on the fly. To save the changes, save the result to a DataFrame Variable
+df10 = df10.drop("City", 1)
+df10 = df10.drop(3, 0)
+print()
+print(df10.index)
+print(df10.columns)
+print(df10.drop(df10.index[4:5], 0)) # df.index()
+print(df10)
+print(df10.drop(df10.columns[2:5], 1)) # df.columns()
+print(df10)
+
+print()
+print("  ----  Adding and Modifying data of a DataFrame  ----  ")
+print(df10.shape)
+print(len(df10.index))
+# Should pass values for all the Rows
+df10["Rank"] = [4,3,2,5,1]
+df10["Continent"] = df10.shape[0] * ["N. America"]
+# Modifying an already existing column values
+df10.loc[:,"State"]=["AR","MO","KA","NY","DC"]
+print(df10)
+
+# To Add a new row, we use a tweak with df.T
+# Transpose columns to rows, add details, transpose again
+
+df10_t = df10.T
+print(df10_t)
+
+df10_t[7] = ["3317 7th St", "FL","USA","Macy's",75,6,"N. America"]
+df10 = df10_t.T
+
+print(df10)
