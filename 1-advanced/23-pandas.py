@@ -166,4 +166,8 @@ print(df10_t)
 df10_t[7] = ["3317 7th St", "FL","USA","Macy's",75,6,"N. America"]
 df10 = df10_t.T
 
+# .apply() method is used to modify all the row values of a particular column
+def add_num(i):
+    return i + 5
+df10["Employees"]=df10["Employees"].apply(add_num)
 print(df10)

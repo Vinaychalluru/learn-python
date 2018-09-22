@@ -70,6 +70,14 @@ myList = ['Good',[2,0,2,0]]
 print(myList[0])
 print(myList[0][3])
 print(myList[1][3])
+l = [ [j*i for j in range(0,4)] for i in range(0,4)]
+print(l)
+
+# Printing second and third column elements across all the rows
+# The same can be achieved on a numpy array using narr[:,1:3]
+# Similar Advances indexing syntax for nested list slicing is not available
+for i in range(len(l)) :
+    print(*[l[i][j] for j in range(1,3)])
 
 # eval
 # Evaluate the given "source" argument which could be a string representing a Python expression

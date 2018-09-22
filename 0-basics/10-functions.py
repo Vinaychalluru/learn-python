@@ -131,7 +131,8 @@ print(help(list))
 # Notes :
 # Anonymous Functions
 # Declaration uses 'lambda' instead of 'def'
-# lambda has been dropped from Python. Also, map, filter and reduce
+# Python3 has lambda expressions, but the functional operations like map, filter, reduce etc. 
+# return iterators instead of a list
 
 # squares = list(map(lambda x: x**2, range(10)))
 
