@@ -22,8 +22,8 @@ try:
     emp1.getDetails()
 
     # I can add a new attriubute like below
-    emp1.age = 28
-    emp1.__setattr__('Location', 'US')
+    emp1.age = 15
+    emp1.__setattr__('Location', 'India')
     print('emp1 Location - %s' % emp1.__getattribute__('Location'))
     print('emp1 has attr age - %s' % hasattr(emp1, 'age'))
     emp1.__delattr__('age')

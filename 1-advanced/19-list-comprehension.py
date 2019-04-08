@@ -29,6 +29,7 @@ for x in [1,2,3]:
 
 # If the expression is a tuple (e.g. the (x, y)), it must be parenthesized.
 notEqualEle = [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+print(notEqualEle)
 
 # Common elements
 list_a = [1, 2, 3, 4]

@@ -3,7 +3,7 @@ myDict = {'Name': 'Vinay', 'Location': 'US', 'Pin': 12345}
 # Update a value using the key
 myDict['Name'] = 'Vinay Kumar'
 # Add a new key-value pair
-myDict['City'] = 'Test Cit'
+myDict['City'] = 'My City'
 
 del myDict['Location']  # Delete a key-value pair
 myDict.clear()  # Clear all the elements of myDict

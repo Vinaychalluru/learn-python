@@ -4,7 +4,7 @@ from pandas import read_json
 from pandas import read_excel
 
 # If you import pandas as whole,
-# all the modules in the package would be imported that load more into memory
+# all the modules in the package would be imported and increases the memory load
 # If import pandas is used, then you can use pandas.DataFrame
 # import pandas
 

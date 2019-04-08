@@ -41,7 +41,7 @@ print('Values are a - %d, b - %d, c - %s' % (a, b, c))
 print('Ids of a - %d, b - %d, c - %d' % (id(a), id(b), id(c)))
 
 
-# Integer object and can be deleted as below
+# Integer objects can be deleted as below
 del a, b, c
 
 # Strings

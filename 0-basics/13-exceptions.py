@@ -12,7 +12,7 @@ b = "3"
 print(a + b)
 # Uncomment the below line and run. Though the line above it should throw Exception, python does not throw
 # because it looks for Syntax errors first and does not run the code
-# Only when the sntax errors are fixed, code would be run and exception thrown
+# Only when the syntax errors are fixed, code would be run and exception thrown
 
 # print(int(1)
 print(1 + 10)

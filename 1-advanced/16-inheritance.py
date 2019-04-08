@@ -36,7 +36,7 @@ class Square(Shape):
 
 
 try:
-    # c = Child()          # instance of child
+    # c = Child()          # instance of Child
     # c.childMethod()      # child calls its method
     # c.parentMethod()     # calls parent's method
     # c.setAttr(200)       # again call parent's method

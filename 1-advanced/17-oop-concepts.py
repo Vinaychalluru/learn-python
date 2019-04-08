@@ -36,7 +36,7 @@ class Vector:
 
 class Secret:
     # Name class attributes with a double underscore prefix,
-    # and those attributes are not be directly visible to outsiders.
+    # and those attributes are not directly visible to outsiders
     __myHiddenVar = 100
 
     def __init__(self):
@@ -67,6 +67,8 @@ try:
     # Operator Overloading
     v1 = Vector(2, 10)
     v2 = Vector(5, -2)
+	# __add__ & __str__ are overloaded here
+	# To see the difference, comment methods inside the class and see for yourself
     print(v1 + v2)
     # Data Hiding
     s = Secret()

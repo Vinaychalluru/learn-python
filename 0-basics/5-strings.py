@@ -20,11 +20,11 @@ print('v' not in myStr)
 
 # String Formatting
 myName = 'Vinay'
-myYear = 1990
+myYear = 1500
 myFmtStr = 'Hello %s. Keep learning'
 print('String formatting is done using the %')
 print(myFmtStr % myName)
-print('I am %s I am born in %d' % (myName, myYear))
+print('I am %s I love %d' % (myName, myYear))
 
 paraStr = """Non-printable characters such as
 TAB (\t) will show up as they intended to when displayed.

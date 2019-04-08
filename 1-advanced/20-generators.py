@@ -23,7 +23,7 @@
 # Why ?
 # 1. Easy to implement than their counter part iterator class
 # 2. Memory efficient
-# Generators are especially useful for memory-intensive tasks, where there is no need to keep all of the elements of a memory-heavy list accessible at the same time. Calculating a series of values one-by-one can also be useful in situations where the complete result is never needed, yielding intermediate results to the caller until some requirement is satisfied and further processing stop
+# Generators are especially useful for memory-intensive tasks, where there is no need to keep all of the elements of a memory-heavy list accessible at the same time. Calculating a series of values one-by-one can also be useful in situations where the complete result is never needed, yielding intermediate results to the caller until some requirement is satisfied and stop / pause further processing
 # 3. Represent an Infinite stream
 # 4. Pipeline Generators
 

@@ -47,9 +47,7 @@ def fn_default_arg(param1, param2, param3='NA'):
 
 
 def fn_variable_arg(param1, param2, *param3):
-    print(param1, param2)
-    for p in param3:
-        print(p)
+    print(param1, param2, *[p for p in param3])
 
 
 fn_required_arg(10, 20, 30)

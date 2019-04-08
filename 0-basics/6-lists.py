@@ -53,9 +53,9 @@ print('List after insert :', myList)
 # Returns the lowest index in the list that obj appears
 print(myList.index('A'))
 
-myList.remove('A')  # Removes object
+myList.remove('A')  # Removes object ONLY at the lowest index it appears and save changes in place
 myList.reverse()
-myList2.sort()  # Use when all the elements are either string type / a number type
+myList2.sort()  # Use when all the elements are same data type. E.g.: either string type / a number type
 newList = [20, 10, 1.5, 2]
 newList.sort()
 print(newList)
@@ -75,12 +75,12 @@ print(l)
 
 # Printing second and third column elements across all the rows
 # The same can be achieved on a numpy array using narr[:,1:3]
-# Similar Advances indexing syntax for nested list slicing is not available
+# Similar Advanced indexing syntax for a normal nested list slicing is not available
 for i in range(len(l)) :
     print(*[l[i][j] for j in range(1,3)])
 
 # eval
-# Evaluate the given "source" argument which could be a string representing a Python expression
+# Evaluate the given "source" argument/string which represents a Python expression
 myList = [0,1,2,3,4,5]
 eval("myList."+"reverse()")
 print(myList)

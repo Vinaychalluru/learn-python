@@ -2,7 +2,7 @@
 # When execution leaves a scope, all automatic objects that were created in that scope are destroyed
 
 # break - teminates the innermost / current loop and resumes execution at the next statement
-# continue - skip the current loop, retest for its condition before reiteratin
+# continue - skip the current loop, retest for its condition before reiterating
 
 count = 10
 
@@ -73,7 +73,7 @@ for num in range(lower, upper + 1):
         print('%d is a prime number \n' % (num))
 
 # Pass statement
-# It is s null operation. Nothing happens when it executes
+# It is a null operation. Nothing happens when it executes
 # Useful in places where your code will go but has not been written yet
 for letter in 'Congratulations':
     if letter == 'u':

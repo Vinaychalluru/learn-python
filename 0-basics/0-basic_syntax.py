@@ -14,7 +14,7 @@ made up of multiple lines and sentences.'''
 
 # User input
 
-# Semicolon allows multiple statements on a single line as below comment
+# Semicolon allows multiple statements on a single line as in below comment
 # Per standard, it is not recommended
 # import sys ; var="test" ; sys.stdout.write("My var is " + var)
 import sys
@@ -29,7 +29,7 @@ elif 10 > 100:
 else:
     print("else")
 
-# VS Code can fold or unfold the regions. Try Ctrl + Shift + [ / Ctrl + Shift + ]
+# VS Code can fold or unfold the regions. Try Ctrl + Shift + ] Ctrl + Shift + [
 # region # Code block start
 
 print(sentence.capitalize())

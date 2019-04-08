@@ -2,7 +2,7 @@
 # A module is a Python object with arbitrarily named attributes that you can bind and reference.
 # Module allows your code to be  logically organized
 
-# A python module named 'sample' resieds in a file name 'sample.py'
+# A python module named 'sample' resides in a file name 'sample.py'
 # Python Modules and Libraries are installed by default but they're limited
 # Third party modules and libraries are referred to as Packages
 
@@ -18,7 +18,7 @@ import math
 import os
 
 from datetime import timezone  # from <module> import <func / attribute>
-from http import server # Here, html is a Library. It is a folder with group of py files
+from http import server # Here, http is a Library. It is a folder with group of py files
 
 math_Modules = dir(math)
 print('type(dir(math)) is ', type(math_Modules))
@@ -47,7 +47,7 @@ print('os.__file__ gives you the path where module is installed', os.__file__)
 # Python stops searching the local namespace for the variable.
 
 # For example, we define a variable Money in the global namespace.
-# Within the function Money, we assign Money a value, therefore Python assumes Money as a local variable.
+# Within the function AddMoney, we assign Money a value, therefore Python assumes Money as a local variable.
 # However, we accessed the value of the local variable Money before setting it, so an UnboundLocalError is the result.
 # Uncommenting the global statement fixes the problem
 

@@ -63,10 +63,10 @@ myStr="12,34,56,78.90"
 print('Output of re.split() :')
 print(*re.split(r'[,.]',myStr),sep='\n',end='\n')
 
-# finditer retuns a match object
 myStr="Alpha beta Alpha charlie Alpha donna"
 reList=re.findall(r'Alpha',myStr)
 print("Output of reList :", *reList, sep="\n", end="\n")
 
+# finditer retuns a match object
 reIterList=re.finditer('Alpha',myStr)
 print(*[(reObj.start(),reObj.end()) for reObj in reIterList],sep="\n",end="\n")
