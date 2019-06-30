@@ -84,5 +84,5 @@ for letter in 'Congratulations':
 for letter in 'Congratulations':
     if letter == 'u':
         continue
-    print('This is continue block') # This line would be unreachable
+        print('This is continue block') # This line would be unreachable
     print('Current Letter :', letter)

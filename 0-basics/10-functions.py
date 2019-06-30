@@ -53,6 +53,7 @@ def fn_variable_arg(param1, param2, *param3):
 fn_required_arg(10, 20, 30)
 fn_keyword_arg(param2=20, param3=30, param1=10)
 # fn_keyword_arg(param1=10, 20, 30) # SyntaxError: positional argument follows keyword argument
+fn_keyword_arg(10, param3=30, param2=20)
 fn_default_arg(10, 20, 30)
 fn_default_arg(10, 20)
 fn_variable_arg(10, 20, 30)
