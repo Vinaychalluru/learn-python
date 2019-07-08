@@ -7,15 +7,15 @@
 import traceback
 
 a = 1 
-b = "3"
+b = 3
 
-print(a + b)
+# print(a + b)
+
 # Uncomment the below line and run. Though the line above it should throw Exception, python does not throw
 # because it looks for Syntax errors first and does not run the code
 # Only when the syntax errors are fixed, code would be run and exception thrown
 
 # print(int(1)
-print(1 + 10)
 
 def isAdult(age):
     assert(age > 18), 'You should be above 18 to be allowed'
