@@ -1,7 +1,10 @@
 from django.conf.urls import url
+from django.urls import path
 
 from . import views
 
-urlpatters = [
-    url(r"^$", views.index, name='index')
+# app_name = 'learning_logs'
+urlpatterns = [
+    path('', views.index, name='index'),
+    url(r'^topics/(?P<topic_id>\d+)/$', views.topic, name='topic'),
 ]
