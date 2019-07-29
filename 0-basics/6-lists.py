@@ -14,10 +14,10 @@ print('A' in myList)
 # Accessing the elements
 alphaList = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 print(alphaList[2])
-print(alphaList[-2])  # Negative: Count from the end - Negative Indexing
+print(alphaList[-2])  # Negative: Position from the end - Negative Indexing - Prints 'F'
 print(alphaList[1:])  # Slicing fetched sections
 print(alphaList[1:4]) # Prints list[1], list[2], list[3]
-print(alphaList[:])
+print(alphaList[:])   # Can be used to copy a list
 print(alphaList[:-3])
 print(alphaList[-5:-1]) # While using negative index also, list processed from left to right
 print(alphaList[-1:-5])
@@ -84,3 +84,8 @@ for i in range(len(l)) :
 myList = [0,1,2,3,4,5]
 eval("myList."+"reverse()")
 print(myList)
+
+# Reverse a list
+# NOTE : list.reverse() is about 8 to 10 times faster than list[::-1] slicing
+a = [x for x in range(10)]
+print(a[::-1])

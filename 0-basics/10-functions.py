@@ -137,3 +137,10 @@ print(help(list))
 
 # List Comprehension
 # squares = [x**2 for x in range(10)]
+
+def f(x=[]):
+    print(id(x), len(x))
+    x+=[3]
+    return sum(x)
+    
+print(f() + f() + f())
