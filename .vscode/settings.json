@@ -1,7 +1,7 @@
 {
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.pythonPath": "D:\\Practise\\Python\\learn-python\\2-others\\django\\v_env\\Scripts\\python.exe",
+    "python.pythonPath": "C:\\Program Files\\Python37\\python.exe",
     "files.autoSave": "onFocusChange",
     "python.autoComplete.addBrackets": true,
     "python.autoComplete.extraPaths": []

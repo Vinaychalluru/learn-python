@@ -141,6 +141,6 @@ print(help(list))
 def f(x=[]):
     print(id(x), len(x))
     x+=[3]
-    return sum(x)
+    return sum(x, x)
     
 print(f() + f() + f())

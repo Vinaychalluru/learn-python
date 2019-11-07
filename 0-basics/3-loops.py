@@ -1,4 +1,4 @@
-# Loop control statement - Chnages execution from Loop's normal sequence
+# Loop control statement - Changes execution from Loop's normal sequence
 # When execution leaves a scope, all automatic objects that were created in that scope are destroyed
 
 # break - teminates the innermost / current loop and resumes execution at the next statement

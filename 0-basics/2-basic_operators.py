@@ -6,6 +6,7 @@ n3 = n1**n2
 print(str(n1) + ' to the power of ' + str(n2) + ' is ' + str(n3))
 print(n1, ' to the power of ', n2, ' is ', n3)
 print('%d to the power of %d is %d' % (n1, n2, n3))
+print(f"{n1} to the power of {n2} is {n3}")
 
 
 n4 = n1/n2 # Float Division
