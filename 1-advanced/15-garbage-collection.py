@@ -17,8 +17,7 @@ class Point:
         print('I am the initializer for class Point')
 
     def __del__(self):
-        class_name = self.__class__.__name__
-        print('Destoying instance of %s' % class_name)
+        print('Destoying instance of %s' % self.__class__.__name__)
 
 
 pt1 = Point()
@@ -29,4 +28,4 @@ print('%d ; %d ; %d ; %d ' % (id(pt1), id(pt2), id(pt3), id(pt4)))
 del pt1
 del pt2
 del pt3
-del pt4
+del pt4 # Point.__del__() gets executed

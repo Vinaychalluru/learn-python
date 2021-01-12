@@ -38,6 +38,7 @@
 
 
 # Exercise 10
+
 # Given the marks of a student
 # m1, m2, m3, m4, m5 = 90, 75, 99, 92, 79
 # Find the total of his/her marks

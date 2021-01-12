@@ -7,8 +7,8 @@ import random
 var1 = 10
 del var1  # To delete the reference to a number object
 
-x = 10
-y = 20
+x = 4
+y = 2
 f = 20.46489
 
 print("Absolute is ", abs(x))
@@ -31,6 +31,8 @@ print("Modf is ", math.modf(f))
 
 myTuple = (10, 20, 30, 40, 50)
 myList = [100, 200, 300, 400, 500]
+x = 100
+y = 200
 
 # A random item from a list, tuple, or string.
 print("Choice is ", random.choice(myTuple))
@@ -41,7 +43,7 @@ print("Random is", random.random())
 # A random float r, such that x is less than or equal to r and r is less than y
 print("Uniform(x,y) is ", random.uniform(x, y))
 
-# Sets the integer starting value used in generating random numbers. Call this function before calling any other random module function. Returns None.
+# Sets the integer starting value used in generating random numbers. Call this function before calling any other random module function such that you can simulate to generate the same random number when executed. Returns None.
 random.seed(x)
 print("Seed is set to ", x)
 

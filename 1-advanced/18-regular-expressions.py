@@ -58,6 +58,7 @@ else:
 myStr="ABC123 abc 123 def456 789xyz"
 reList=re.findall(r'[a-zA-Z]+[0-9]+',myStr)
 print("Output of re.findall() :", *reList,sep='\n',end='\n')
+print(*re.split(r'[ ]',myStr),sep='\n',end='\n')
 
 myStr="12,34,56,78.90"
 print('Output of re.split() :')

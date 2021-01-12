@@ -2,7 +2,7 @@
 # Simply speaking, a generator is a function that returns an object (iterator) which we can iterate over (one value at a time).
 
 # Python generators are a simple way of creating iterators. All the overhead we mentioned below are automatically handled by generators in Python
-# There is a lot of overhead in building an iterator in Python; we have to implement a class with __iter__() and __next__() method, keep track of internal states, raise StopIteration when there was no values to be returned etc.
+# There is a lot of overhead in building an iterator in Python; we have to implement a class with __iter__() and __next__() method, keep track of internal states, raise StopIteration when there is no value to be returned etc.
 
 # Creation
 # It is as easy as defining a normal function with yield statement instead of a return statement.
@@ -68,7 +68,7 @@ print(next(my_generator))
 # We can use generators with for loops directly
 # Furthermore, the generator object can be iterated only once. To iterate again, create another object
 my_generator2 = my_gen_func()
-for item in my_gen_func():
+for item in my_generator2:
     print(item)
 
 
@@ -135,8 +135,8 @@ my_list = [1, 3, 6, 10]
 (x**2 for x in my_list)
 
 square_gen = (x**2 for x in my_list)
-print(next(square_gen))
-print(next(square_gen))
+next(square_gen)
+next(square_gen)
 
 # Generator expression can be used inside functions. When used in such a way, the round parentheses can be dropped
 sum(x**2 for x in my_list)

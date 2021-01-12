@@ -12,9 +12,9 @@ print('Hello %s' % (Name))
 print("Test")
 print('Current Working Dir is ', os.getcwd())
 
-fileObj = open('./python-learn/assets/sample-file.txt', 'r+')
-fileBuffer = open('./python-learn/assets/sample-file-buffer.txt', 'r+', 1)
-fileToWrite = open('./python-learn/assets/sample-file-to-write.txt', 'w+')
+fileObj = open(os.path.join(os.getcwd(),'assets/sample-file.txt'), 'r+')
+fileBuffer = open(os.path.join(os.getcwd(),'assets/sample-file-buffer.txt'), 'r+', 1)
+fileToWrite = open(os.path.join(os.getcwd(),'assets/sample-file-to-write.txt'), 'w+')
 
 # Accessing a file Object
 for line in fileObj.readlines():
@@ -48,9 +48,9 @@ with open("../assets/sample-test.txt","w") as file2 :
 
 # Renaming a file
 print('Current Working Dir is ', os.getcwd())
-if os.path.isfile('./python-learn/assets/sample-file-written.txt'):
-    os.remove('./python-learn/assets/sample-file-written.txt')
-    os.rename(fileToWrite.name, './python-learn/assets/sample-file-written.txt')
+if os.path.isfile('../assets/sample-file-written.txt'):
+    os.remove('../assets/sample-file-written.txt')
+    os.rename(fileToWrite.name, '../assets/sample-file-written.txt')
 else:
-    os.rename(fileToWrite.name, './python-learn/assets/sample-file-written.txt')
-    os.remove('./python-learn/assets/sample-file-written.txt')
+    os.rename(fileToWrite.name, '../assets/sample-file-written.txt')
+    os.remove('../assets/sample-file-written.txt')

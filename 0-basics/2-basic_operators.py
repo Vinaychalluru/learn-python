@@ -1,7 +1,7 @@
 # Operands and Operators
 
-n1 = 9
-n2 = 2
+n1 = 8
+n2 = 3
 n3 = n1**n2
 print(str(n1) + ' to the power of ' + str(n2) + ' is ' + str(n3))
 print(n1, ' to the power of ', n2, ' is ', n3)
@@ -48,6 +48,8 @@ else:
 
 # Identity Operators - Compares the memory locations of two objects
 # is, is not
+# Identity operators are used to compare the objects, not if they are equal,
+# but if they are actually the same object, with the same memory location
 n1 = 9
 id_n1 = id(n1)  # id() returns the identity of an object
 print('Identity / Memory location of n1 ', id_n1)
@@ -62,6 +64,10 @@ else:
 if c is d:
     print('c is d')
     print('Id of c - %d, Id of d - %d' % (id(c), id(d)))
+
+l = [1, 2, 3]
+l1 = [1, 2, 3]
+print("Check if l is l1 :", l is l1)
 
 var = 100
 if (var == 100):

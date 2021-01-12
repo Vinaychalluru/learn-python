@@ -5,9 +5,11 @@
 # 5) Ask for two user inputs. Both integer. Divide and print the remainder
 # 6) In the above #5, if the second number is 0, print 'Not possible to divide'
 # 7) Print Numbers 1 to 10 using a for loop
-# 8) Print Numbers 1 to 10 using a While loo
+# 8) Print Numbers 1 to 10 using a While loop
 
 numbers = [1,4,5,6,77,554,333,6665,44]
+
+numbers
 
 for number in numbers:
     if number%2 == 0:

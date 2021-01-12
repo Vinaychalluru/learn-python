@@ -1,6 +1,6 @@
 
 # A module is a Python object with arbitrarily named attributes that you can bind and reference.
-# Module allows your code to be  logically organized
+# Module allows your code to be logically organized
 
 # A python module named 'sample' resides in a file name 'sample.py'
 # Python Modules and Libraries are installed by default but they're limited
@@ -17,18 +17,20 @@
 import math
 import os
 
-from datetime import timezone  # from <module> import <func / attribute>
+from datetime import timezone  # from <module> import <function / attribute / class>
 from http import server # Here, http is a Library. It is a folder with group of py files
 
-math_Modules = dir(math)
-print('type(dir(math)) is ', type(math_Modules))
+math_attributes = dir(math)
+print('type(dir(math)) is ', type(math_attributes))
 print()
-print('dir(math) has the following', math_Modules)
+print('dir(math) has the following', math_attributes)
 print()
 print('os.__file__ gives you the path where module is installed', os.__file__)
 
 # Packages
 # Package is a hierarchial directory structure that consists of modules, subpackages
+# In Python, a sub-directory that includes a __init__.py file is considered a package, and can be imported.
+# When you import a package, the __init__.py executes and defines what symbols the package exposes to the outside world.
 
 # Namespace and Scope
 
