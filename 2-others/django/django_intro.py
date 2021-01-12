@@ -114,6 +114,7 @@
 
 # WSGI
 #     - Web Server Gateway Interface
+#     - Provides a hook for Web Servers such as Apache or EngineX
 #     - WSGI is developed for 'calling convention' for web servers
 #         to forward requests to web applications or frameworks written in the Python programming language
 #     - WSGI was thus created as an implementation-agnostic interface

@@ -1,0 +1,8 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "C:\\Program Files\\Python37\\python.exe",
+    "files.autoSave": "onFocusChange",
+    "python.autoComplete.addBrackets": true,
+    "python.autoComplete.extraPaths": []
+}

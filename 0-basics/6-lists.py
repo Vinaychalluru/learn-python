@@ -17,7 +17,7 @@ print(alphaList[2])
 print(alphaList[-2])  # Negative: Position from the end - Negative Indexing - Prints 'F'
 print(alphaList[1:])  # Slicing fetched sections
 print(alphaList[1:4]) # Prints list[1], list[2], list[3]
-print(alphaList[:])   # Can be used to copy a list
+print(alphaList[:])   # Can be used to copy a list. Note that list.copy() is faster
 print(alphaList[:-3])
 print(alphaList[-5:-1]) # While using negative index also, list processed from left to right
 print(alphaList[-1:-5])
@@ -53,7 +53,7 @@ print('List after insert :', myList)
 # Returns the lowest index in the list that obj appears
 print(myList.index('A'))
 
-myList.remove('A')  # Removes object ONLY at the lowest index it appears and save changes in place
+myList.remove('A')  # Removes the object ONLY at the lowest index it appears and save changes in place
 myList.reverse()
 myList2.sort()  # Use when all the elements are same data type. E.g.: either string type / a number type
 newList = [20, 10, 1.5, 2]
@@ -66,7 +66,7 @@ print("myList after Shuffle is", myList)
 
 # Nested List
 myList.clear()
-myList = ['Good',[2,0,2,0]]
+myList = ['Good',[0,1,2,3]]
 print(myList[0])
 print(myList[0][3])
 print(myList[1][3])

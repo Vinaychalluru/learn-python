@@ -47,13 +47,13 @@ def assert_example_with_try():
 # Standard Exceptions
 # try - except - else
 # try - except - finally
-# The code in the else-block executes if the code in the try: block does not raise an exception.
+# The code in the else-block executes if the code in the try block does not raise an exception. That is when code doesn't go into except block
 
 
 def exception_example():
     print('Begin - exception_example')
     try:
-        myFile = open('./assets/sample-file.txt', 'r')
+        myFile = open('../assets/sample-file.txt', 'r')
         myFile.write('Good Day!')
         print('Since exception occurs in the above line, code below this line will not get executed')
     except IOError as e:
@@ -66,9 +66,9 @@ def exception_example():
 def exception_depth_example():
     print('Begin - exception_depth_example')
     try:
-        myFile = open('./assets/test-file.txt', 'r')
+        myFile = open('../assets/test-file.txt', 'r')
         try:
-            myFileInner = open('./assets/sample-file.txt', 'r')
+            myFileInner = open('../assets/sample-file.txt', 'r')
             myFileInner.write('Good Day!')
         finally:
             myFileInner.close()

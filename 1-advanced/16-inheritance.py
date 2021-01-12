@@ -56,6 +56,7 @@ class Parent2(object):
         self.p2_age = 2
 
     def getAge(self):
+        print(f"Parent2 getAge is accessed. My Age is {self.p2_age}")
         return f"Parent2 age is {self.p2_age}"
 
 
@@ -137,9 +138,10 @@ try:
     sqr1.setAttr(200)
     sqr1.getAttr()
 
-    print('issubclass(Square,Shape) : ' + str(issubclass(Square, Shape)))
-    print('isinstance(sqr1,Square) : ' + str(isinstance(sqr1, Square)))
-    print('isinstance(sqr1,Shape) : ' + str(isinstance(sqr1, Shape)))
+    print('issubclass(Square, Shape) : ' + str(issubclass(Square, Shape)))
+    print('isinstance(sqr1, Square) : ' + str(isinstance(sqr1, Square)))
+    print('isinstance(sqr1, Shape) : ' + str(isinstance(sqr1, Shape)))
+    print('isinstance(sqr1, object) : ' + str(isinstance(sqr1, object)))
 
     print("")
     c = Child12()

@@ -89,13 +89,15 @@ print(tinyDict.values())
 print(int('10'))
 print(chr(65))  # A is printed in the output
 print(str(10))
+print(ord('A')) # 65 is printed in the output - ASCII value of the character
 
 # The Underscore
 # Underscore _ is considered as "I don't Care" or "Throwaway" variable in Python
 # The python interpreter stores the last expression value to the special variable called _.
 
 # Try the below in an Interpreter mode
-# print(10)
+# a = 10
+# a + 10
 # _
 # _ ** 3
 
@@ -106,7 +108,7 @@ print(x, y)
 
 # 1. For storing the value of last expression in interpreter.
 # 2. For ignoring the specific values. (so-called “I don’t care”)
-# 3. To give special meanings and functions to name of vartiables or functions.
+# 3. To give special meaning and behavior to the name of variables or functions.
 # 4. To use as ‘Internationalization(i18n)’ or ‘Localization(l10n)’ functions.
 # 5. To separate the digits of number literal value.
 

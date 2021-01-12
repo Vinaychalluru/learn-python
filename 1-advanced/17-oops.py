@@ -2,7 +2,7 @@
 #     - Encapsulation    : Bundling of data with methods that operate on them
 #     - Data Abstraction : Encapsulation + Hiding
 #     - Polymorphism     : 
-#     - Inheritance      : Use attributes and methods of another Class - Override / Extend 
+#     - Inheritance      : Use attributes and methods of another Class - Override / Extend
 
 # Benefits
 #     - Modular structure

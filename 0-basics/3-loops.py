@@ -10,17 +10,16 @@ while (count < 5):  # If the condition is false, the loop will never run
     print(str(count))
     count += 1
 
-
 # Python allows to have an else statement associated with a loop statement
 
 while (count > 5):
-    print(str(count))
+    print(count)
     count -= 1
 else:
     print('Else for the While loop')
 
 wholeNum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-i = 0
+i = 2
 # The else statement is executed when the condition becomes false. Loop will not run further
 while (wholeNum[i] % 2 == 0 and i < 10):
     i += 1
@@ -43,18 +42,14 @@ for i in range(len(wholeNum)):
     print(wholeNum[i])
 
 # Using step value for range()
-for i in range(len(wholeNum) -1 ,0,-1):
-    print(wholeNum[i])
+s = 'Alpha'
+for i in range(len(s) -1, -1, -1):
+    print(i)
 
 # Using parameter 'end' and 'sep' for print()
-for i in range(1,11):
-    print(i,end="~")
-else:
-    print()
-
 # The print function uses sep to separate the arguments, and end after the last argument
 # * is used to pass all the values of range as arguments to print
-print(*range(1,11),sep='',end='\n')
+print(*range(1,11), sep=',', end='\n')
 
 # Using _ in the loops
 # Underscore _ is considered as "I don't Care" or "Throwaway" variable in Python
@@ -70,7 +65,7 @@ for num in range(lower, upper + 1):
         if (num % i) == 0:
             break
     else:  # The else statement is executed when the loop has exhausted iterating the list.
-        print('%d is a prime number \n' % (num))
+        print('%d is a prime number' % (num))
 
 # Pass statement
 # It is a null operation. Nothing happens when it executes
@@ -81,8 +76,12 @@ for letter in 'Congratulations':
         print('This is pass block')
     print('Current Letter :', letter)
 
-for letter in 'Congratulations':
-    if letter == 'u':
-        continue
-        print('This is continue block') # This line would be unreachable
-    print('Current Letter :', letter)
+
+for _ in range(0,2):
+    for letter in 'Alter':
+        if letter == 't':
+            continue
+            print('This is continue block') # This line would be unreachable code
+        # When continue statement is reached, all the lines below it inside internal loop gets skipped too
+        print(letter)
+    print('\n')
